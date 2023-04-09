@@ -37,7 +37,7 @@ def CreateLogger(loggerName):
     return logger
  
 def LoggingTest(pid):
-    subLogger = CreateLogger("Process_%d" % (pid))
+    subLogger = CreateLogger("Process")
     count = 0
     while True:
         subLogger.info("Log : 0x%08x" % count)
